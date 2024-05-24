@@ -24,12 +24,15 @@ export const siteConfig = {
     }),
     {
       title: "Artist",
+      href: "artists"
     },
     {
       title: "Community",
+      href: "community"
     },
     {
       title: "Sale",
+      href: "sale"
     },
   ],
   footer: [
