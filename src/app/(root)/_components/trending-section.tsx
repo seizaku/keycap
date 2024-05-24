@@ -8,7 +8,7 @@ const products = [
     title: "Pokémon Pickachu",
     price: 48.99,
     artist: "Dwarf Factory",
-    src: "https://keycapagency.com/cdn/shop/products/Pokemon-Ecom-8_540x.png?v=1661702773",
+    src: "/pokemon.png",
   },
   {
     title: "Gnary Drakon",
