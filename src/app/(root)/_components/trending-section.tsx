@@ -32,7 +32,7 @@ export const TrendingSection = () => {
         <div>
           <h1 className="text-4xl font-bold">Trending Keycaps</h1>
           <p className="text-xl text-muted-foreground">
-            Explore products from around the world
+            Handcrafted by artisans around the world
           </p>
         </div>
         <Link className={buttonVariants({ variant: "outline" })} href={"/"}>
