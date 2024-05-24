@@ -5,10 +5,22 @@ import { ProductCard } from "@/components/product-card";
 
 const products = [
   {
-    title: "Terrarium Easter Dream",
-    price: 56.99,
-    artist: "Matoko Sensei",
-    src: "https://m.media-amazon.com/images/I/61HpcYg0vWL._AC_UF1000,1000_QL80_.jpg",
+    title: "Pokémon Pickachu",
+    price: 48.99,
+    artist: "Dwarf Factory",
+    src: "https://keycapagency.com/cdn/shop/products/Pokemon-Ecom-8_540x.png?v=1661702773",
+  },
+  {
+    title: "Gnary Drakon",
+    price: 45.99,
+    artist: "Dwarf Factory",
+    src: "https://keycapagency.com/cdn/shop/products/rong-7_540x.jpg?v=1658117509",
+  },
+  {
+    title: "Sci-fi Whale Yellow",
+    price: 44.99,
+    artist: "Dwarf Factory",
+    src: "https://keycapagency.com/cdn/shop/products/McWhale-Ecom1.jpg",
   },
 ];
 
@@ -29,7 +41,7 @@ export const TrendingSection = () => {
           View all
         </Link>
       </div>
-      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {products?.map((product, index) => {
           return (
             <ProductCard
