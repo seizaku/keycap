@@ -98,5 +98,9 @@ export const siteConfig = {
         },
       ]
     },
-  ]
+  ],
+  social_links: {
+    github: "https://github.com/seizaku/keycap-shop",
+    linked_in: "https://www.linkedin.com/in/landrei-zerna/"
+  }
 }
