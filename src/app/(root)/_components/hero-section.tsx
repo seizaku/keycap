@@ -4,11 +4,11 @@ export const HeroSection = () => {
   return (
     <section className="w-full h-96 sm:h-[720px] overflow-hidden">
       <div className="relative h-full w-full flex items-center">
-        <div className="absolute text-center w-full h-full flex flex-col justify-center bg-primary/80">
-          <h1 className="font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary-foreground">
+        <div className="absolute text-center w-full h-full flex flex-col justify-center bg-primary/80 dark:bg-background/80">
+          <h1 className="font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary-foreground dark:text-foreground">
             Beauty at <br /> Your Fingertips
           </h1>
-          <p className="max-w-sm md:max-w-md mx-auto mt-6 text-primary-foreground">
+          <p className="max-w-sm md:max-w-md mx-auto mt-6 text-primary-foreground dark:text-foreground">
             Elevate your typing experience with PBT keycaps from Sunzit.
             Redefine your typing sanctuary effortlessly.
           </p>
