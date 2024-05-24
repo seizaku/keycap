@@ -13,7 +13,7 @@ export const SiteHeader = () => {
       <div className="pr-4 sm:container flex items-center justify-between w-full">
         <div className="flex items-center gap-6">
           <MobileNav items={siteConfig.mainNav} />
-          <BrandLogo className="h-8 hidden sm:block w-fit" />
+          <BrandLogo className="h-8 hidden sm:block w-fit fill-background" />
           <MainNav items={siteConfig.mainNav} />
         </div>
         <div className="flex items-center gap-2">
