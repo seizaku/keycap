@@ -16,7 +16,12 @@ export const TrendingSection = () => {
   return (
     <SectionContainer>
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Trending Keycaps</h1>
+        <div>
+          <h1 className="text-2xl font-bold">Trending Keycaps</h1>
+          <p className="text-xl text-muted-foreground">
+            Explore products from around the world
+          </p>
+        </div>
         <Link
           className="underline text-muted-foreground hover:text-foreground"
           href={"/"}
