@@ -26,6 +26,9 @@ export const siteConfig = {
       title: "Artist",
     },
     {
+      title: "Community",
+    },
+    {
       title: "Sale",
     },
   ],
