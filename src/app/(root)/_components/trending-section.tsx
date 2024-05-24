@@ -1,7 +1,8 @@
 import { SectionContainer } from "./section-container";
-import Image from "next/image";
 import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
 import { ProductCard } from "@/components/product-card";
+import { ArrowRight } from "lucide-react";
 
 const products = [
   {
@@ -34,11 +35,8 @@ export const TrendingSection = () => {
             Explore products from around the world
           </p>
         </div>
-        <Link
-          className="underline text-muted-foreground hover:text-foreground"
-          href={"/"}
-        >
-          View all
+        <Link className={buttonVariants({ variant: "outline" })} href={"/"}>
+          View all <ArrowRight className="h-4 ml-2" />
         </Link>
       </div>
       <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
