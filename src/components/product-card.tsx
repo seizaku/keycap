@@ -10,7 +10,7 @@ export interface ProductCard {
 
 export const ProductCard = ({ title, price, artist, src }: ProductCard) => {
   return (
-    <Link href="" className="h-96 w-full">
+    <Link href="" className="h-96 w-full mb-12">
       <div className="relative h-full w-full bg-muted flex justify-center items-center rounded overflow-hidden">
         <Image
           fill
