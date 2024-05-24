@@ -13,11 +13,7 @@ export const BrandLogo = ({ ...props }) => {
   }, [theme]);
   return (
     <Link href={"/"}>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="fill-background"
-        viewBox="0 0 360 100"
-      >
+      <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 100">
         <path
           stroke={currentTheme == "light" ? "#000" : "#fff"}
           strokeWidth="4"
