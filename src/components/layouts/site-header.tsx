@@ -9,7 +9,7 @@ export const SiteHeader = () => {
   const user = false;
 
   return (
-    <header className="sticky top-0 w-full h-16 border-b bg-background flex items-center">
+    <header className="sticky z-20 top-0 w-full h-16 border-b bg-background flex items-center">
       <div className="pr-4 sm:container flex items-center justify-between w-full">
         <div className="flex items-center gap-6">
           <MobileNav items={siteConfig.mainNav} />
