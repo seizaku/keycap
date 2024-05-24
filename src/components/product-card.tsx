@@ -11,8 +11,13 @@ export interface ProductCard {
 export const ProductCard = ({ title, price, artist, src }: ProductCard) => {
   return (
     <Link href="" className="h-96 w-full">
-      <div className="relative h-full w-full bg-muted flex justify-center items-center">
-        <Image fill alt="image" className="object-cover" src={src} />
+      <div className="relative h-full w-full bg-muted flex justify-center items-center rounded overflow-hidden">
+        <Image
+          fill
+          alt="image"
+          className="object-cover transition-all hover:scale-110 ease-in-out rounded"
+          src={src}
+        />
       </div>
       <div className="mt-2">
         <span className="font-medium">{title}</span>
