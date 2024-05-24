@@ -1,7 +1,8 @@
 import { BrandLogo } from "@/components/logo";
 import { siteConfig } from "@/config/site-config";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
 import { SendHorizonalIcon } from "lucide-react";
 import { ModeToggle } from "@/components/theme-mode-switch";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
@@ -57,9 +58,12 @@ export const Footer = () => {
             Built by <span className="font-medium">Seizaku.</span>
           </p>
           <div className="flex gap-4 items-cente">
-            <Button variant={"ghost"}>
+            <Link
+              href={siteConfig.social_links.github}
+              className={buttonVariants({ size: "icon", variant: "ghost" })}
+            >
               <GitHubLogoIcon />
-            </Button>
+            </Link>
             <ModeToggle />
           </div>
         </div>
