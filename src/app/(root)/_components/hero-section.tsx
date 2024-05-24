@@ -9,8 +9,8 @@ export const HeroSection = () => {
             Beauty at <br /> Your Fingertips
           </h1>
           <p className="max-w-sm md:max-w-md mx-auto mt-6 text-primary-foreground dark:text-foreground">
-            Elevate your typing experience with PBT keycaps from Sunzit.
-            Redefine your typing sanctuary effortlessly.
+            Unique designs from artists worldwide. Upgrade your keyboard with
+            our premium keycaps.
           </p>
           <div className="flex gap-6 justify-center mt-6">
             <Button size={"lg"}>Explore Products</Button>
