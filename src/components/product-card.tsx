@@ -22,7 +22,7 @@ export const ProductCard = ({ title, price, artist, src }: ProductCard) => {
       <div className="mt-2">
         <span className="font-medium">{title}</span>
         <div className="flex justify-between items-center">
-          <span className="text-muted-foreground">By {artist}</span>
+          <span className="text-muted-foreground text-sm">By {artist}</span>
           <span className="font-bold">${price}</span>
         </div>
       </div>
