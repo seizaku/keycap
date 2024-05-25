@@ -23,6 +23,12 @@ const products = [
     artist: "Dwarf Factory",
     src: "https://keycapagency.com/cdn/shop/products/McWhale-Ecom1.jpg",
   },
+  {
+    title: "Hamburger Meal",
+    price: 44.99,
+    artist: "Dwarf Factory",
+    src: "https://keycapagency.com/cdn/shop/products/fast-food-13-1_540x.png?v=1669803057",
+  },
 ];
 
 export const TrendingSection = () => {
@@ -30,8 +36,8 @@ export const TrendingSection = () => {
     <SectionContainer>
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-4xl font-bold">Trending Keycaps</h1>
-          <p className="text-xl text-muted-foreground">
+          <h1 className="text-4xl font-bold">Featured</h1>
+          <p className="text-lg text-muted-foreground">
             Handcrafted by artisans around the world
           </p>
         </div>
@@ -39,7 +45,7 @@ export const TrendingSection = () => {
           View all <ArrowRight className="h-4 ml-2" />
         </Link>
       </div>
-      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {products?.map((product, index) => {
           return (
             <ProductCard
