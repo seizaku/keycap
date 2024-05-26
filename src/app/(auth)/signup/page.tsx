@@ -9,7 +9,7 @@ export default function SignUpPage() {
     <main className="flex bg-background">
       <div className="container w-full h-screen flex justify-center items-center">
         <div className="max-w-sm w-full p-6 rounded-lg">
-          <BrandLogo className="md:hidden h-8 w-fit fill-transparent mx-auto mb-4" />
+          <BrandLogo className="h-8 w-fit fill-transparent mx-auto mb-4" />
           <h1 className="font-medium text-lg">Sign up</h1>
           <p className="text-sm text-muted-foreground mb-6">
             {`Enter your email, and we'll send you a code to your inbox. No need
