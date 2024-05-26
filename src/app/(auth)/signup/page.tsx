@@ -9,11 +9,12 @@ export default function SignUpPage() {
   return (
     <main className="flex bg-background">
       <div className="hidden md:block relative w-full bg-accent">
-        <div className="absolute container pt-6 bg-background/60 h-full">
+        <div className="absolute container pt-6 bg-zinc-950/60 h-full">
           <BrandLogo className="h-8 w-fit fill-transparent mb-4" />
         </div>
         <Image
           src="/img-2.jpg"
+          fill
           alt="img"
           className="top-0 h-full w-full object-cover"
         />

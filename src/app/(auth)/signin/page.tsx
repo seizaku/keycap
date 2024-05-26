@@ -3,21 +3,10 @@ import { BiLogoGoogle, BiLogoFacebook } from "react-icons/bi";
 import Link from "next/link";
 import { BrandLogo } from "@/components/logo";
 import { SignInForm } from "./_components/signin-form";
-import Image from "next/image";
 
 export default function SignInPage() {
   return (
     <main className="flex bg-background">
-      <div className="hidden md:block relative w-full bg-accent">
-        <div className="absolute container pt-6 bg-background/60 h-full">
-          <BrandLogo className="h-8 w-fit fill-transparent mb-4" />
-        </div>
-        <Image
-          src="/img-2.jpg"
-          alt="img"
-          className="top-0 h-full w-full object-cover"
-        />
-      </div>
       <div className="container w-full h-screen flex justify-center items-center">
         <div className="max-w-sm w-full p-6 rounded-lg">
           <BrandLogo className="md:hidden h-8 w-fit fill-transparent mx-auto mb-4" />
