@@ -3,6 +3,7 @@ import { BiLogoGoogle, BiLogoFacebook } from "react-icons/bi";
 import Link from "next/link";
 import { BrandLogo } from "@/components/logo";
 import { SignInForm } from "./_components/signin-form";
+import Image from "next/image";
 
 export default function SignInPage() {
   return (
@@ -11,7 +12,7 @@ export default function SignInPage() {
         <div className="absolute container pt-6 bg-background/60 h-full">
           <BrandLogo className="h-8 w-fit fill-transparent mb-4" />
         </div>
-        <img
+        <Image
           src="/img-2.jpg"
           alt="img"
           className="top-0 h-full w-full object-cover"
@@ -22,8 +23,8 @@ export default function SignInPage() {
           <BrandLogo className="md:hidden h-8 w-fit fill-transparent mx-auto mb-4" />
           <h1 className="font-medium text-lg">Sign in</h1>
           <p className="text-sm text-muted-foreground mb-6">
-            Enter your email, and we'll send you a code to your inbox. No need
-            for passwords — like magic!
+            {`Enter your email, and we'll send you a code to your inbox. No need
+            for passwords — like magic!`}
           </p>
           <SignInForm />
           <div className="relative my-4">
