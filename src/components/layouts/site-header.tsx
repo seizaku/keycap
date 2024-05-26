@@ -1,9 +1,11 @@
 import { siteConfig } from "@/config/site-config";
 import { MobileNav } from "@/components/layouts/mobile-nav";
 import { MainNav } from "@/components/layouts/main-nav";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { BrandLogo } from "@/components/logo";
-import { BiSearch, BiCart } from "react-icons/bi";
+import { Search } from "lucide-react";
+import { UserCart } from "@/components/layouts/user-cart";
+import Link from "next/link";
 
 export const SiteHeader = () => {
   const user = false;
@@ -18,12 +20,14 @@ export const SiteHeader = () => {
         </div>
         <div className="flex items-center gap-2">
           <Button variant={"outline"} size={"icon"}>
-            <BiSearch className="h-5 w-5" />
+            <Search className="h-4 w-4" />
           </Button>
-          <Button variant={"outline"} size={"icon"}>
-            <BiCart className="h-5 w-5" />
-          </Button>
-          <Button size={"sm"}>Sign In</Button>
+          <UserCart />
+          {!user && (
+            <Link href={"/signin"} className={buttonVariants({ size: "sm" })}>
+              Sign In
+            </Link>
+          )}
         </div>
       </div>
     </header>
