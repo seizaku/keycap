@@ -22,8 +22,8 @@ export const UserCart = () => {
         <SheetHeader>
           <SheetTitle>Cart</SheetTitle>
           <SheetDescription>
-            This action cannot be undone. This will permanently delete your
-            account and remove your data from our servers.
+            Manage your items here. Review, update quantities, or remove
+            products before checkout.
           </SheetDescription>
         </SheetHeader>
         <div className="flex flex-col items-center justify-center h-1/2 text-muted-foreground">
