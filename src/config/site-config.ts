@@ -6,7 +6,8 @@ export type siteConfig = typeof siteConfig;
 export const siteConfig = {
   name: "Keycap Store",
   description: "Upgrade your keyboard with our premium keycaps.",
-  url: "",
+  url: process.env.NEXT_PUBLIC_SITE_URL,
+  welcome_url: `${process.env.NEXT_PUBLIC_SITE_URL}`,
   mainNav: [
     ...productConfig.categories.map((item) => {
       return {
