@@ -3,6 +3,7 @@ import { BiLogoGoogle, BiLogoFacebook } from "react-icons/bi";
 import Link from "next/link";
 import { BrandLogo } from "@/components/logo";
 import { SignUpForm } from "./_components/signup-form";
+import { OAuthProviders } from "@/components/oauth-providers";
 
 export default function SignUpPage() {
   return (
@@ -26,14 +27,7 @@ export default function SignUpPage() {
               </span>
             </div>
           </div>
-          <div className="my-2 grid grid-cols-1 gap-2">
-            <Button variant={"outline"} className="w-full">
-              <BiLogoGoogle className="text-foreground mr-2" /> Google
-            </Button>
-            <Button variant={"outline"} className="w-full">
-              <BiLogoFacebook className="text-foreground mr-2" /> Facebook
-            </Button>
-          </div>
+          <OAuthProviders />
           <p className="text-sm text-center">
             Have an account?
             <span className="font-medium ml-1">
